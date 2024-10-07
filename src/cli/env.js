@@ -1,6 +1,7 @@
 const parseEnv = () => {
 	// Write your code here
 
+	// get env
 	const envObject = process.env;
 	const envObjectEntries = Object.entries(envObject);
 

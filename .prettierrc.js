@@ -1,0 +1,15 @@
+module.exports = {
+	semi: true,
+	singleQuote: false,
+	tabWidth: 2,
+	useTabs: true,
+	files: [".js", ".ts", "mjs", "cjs"],
+	printWidth: 80,
+	quetProps: "as-needed",
+	brecketSpacing: true,
+	brecketSameLine: false,
+	arrowParens: "always",
+	endOfLine: "auto",
+	singleAttributePerLine: true,
+	trailingComma: "all",
+};
