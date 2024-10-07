@@ -1,3 +1,5 @@
+import { stdout } from 'node:process';
+
 const args = process.argv.slice(2);
 
 console.log(`Total number of arguments is ${args.length}`);
@@ -7,6 +9,7 @@ const echoInput = (chunk) => {
     const chunkStringified = chunk.toString();
     if (chunkStringified.includes('CLOSE')) process.exit(0);
     process.stdout.write(`Received from master process: ${chunk.toString()}\n`)
+    stdout.end();
 };
 
 process.stdin.on('data', echoInput);
